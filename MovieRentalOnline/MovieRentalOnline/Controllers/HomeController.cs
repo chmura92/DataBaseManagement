@@ -22,7 +22,7 @@ namespace MovieRentalOnline.Controllers
             var lista = db.Actors.ToList();
 
 
-            return View();
+            return View(lista);
         }
 
         public ActionResult About()

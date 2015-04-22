@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MovieRentalOnline.Models.Actor>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <table class="table">
+        <thead>
+            {
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Birth Date</th>
+            </tr>
+            }
+        </thead>
+        <tbody>
+            @foreach (var entity in Model)
+            {
+
+                <tr>
+                    <td>@entity.FirstName</td>
+                    <td>@entity.LastName</td>
+                    <td>@entity.DateOfBirth.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
