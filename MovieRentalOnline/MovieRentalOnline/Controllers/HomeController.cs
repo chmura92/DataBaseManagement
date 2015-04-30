@@ -14,15 +14,15 @@ namespace MovieRentalOnline.Controllers
         public ActionResult Index()
         {
             // dodawanie nowych obiektow
-            Actor a1 = new Actor {FirstName = "nowyy", LastName = "nowyy", DateOfBirth = DateTime.Today};
-            db.Actors.Add(a1);
-            db.SaveChanges();
+           // Actor a1 = new Actor {FirstName = "nowyy", LastName = "nowyy", DateOfBirth = DateTime.Today};
+            //db.Actors.Add(a1);
+             //   db.SaveChanges();
 
             // pobieranie obiektow z bazy
-            var lista = db.Actors.ToList();
+           // var lista = db.Actors.ToList();
 
 
-            return View(lista);
+            return View();
         }
 
         public ActionResult About()

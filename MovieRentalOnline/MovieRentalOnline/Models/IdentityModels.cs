@@ -21,7 +21,7 @@ namespace MovieRentalOnline.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("RentalContext", throwIfV1Schema: false)
         {
         }
 
